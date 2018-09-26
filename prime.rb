@@ -1,9 +1,9 @@
-# Add  code here!
-def prime?(num)
-  for i in 2..num-1
-    if num % i == 0
-      return false
+def prime? (n)
+    if n <= 1
+        false
+    elsif n == 2
+        true
+    else 
+        (2..n/2).none? { |i| n % i == 0}
     end
-    return true
-  end
 end
